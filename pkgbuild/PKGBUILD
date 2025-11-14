@@ -1,14 +1,19 @@
-# Maintainer: Tales A. Mendonça <talesam@gmail.com>
+#Maintainer: eltonff <eltonfabricio10@gmail.com>
 
-pkgname=pkgbuild-template-translate
-pkgdesc="Package template for BigCommunity"
+pkgname=comm-xfce-control
+pkgdesc="A modern GTK4/Adwaita XFCE Control Center."
 # Uncomment and edit the following lines as needed
-#depends=('')
+depends=(
+    'gtk4'
+    'libadwaita'
+    'python'
+    'python-gobject'
+)
+conflicts=('comm-xfce-control')
+provides=('comm-xfce-control')
+replaces=('comm-xfce-control')
 #makedepends=('')
 #optdepends=('')
-#conflicts=('')
-#provides=('')
-#replaces=('')
 pkgver=$(date +%y.%m.%d)
 pkgrel=$(date +%H%M)
 arch=('any')
